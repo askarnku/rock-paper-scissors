@@ -12,14 +12,6 @@ const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
-console.log(userScore_span);
-console.log(computerScore_span);
-console.log(scoreBoard_div);
-console.log(result_div);
-console.log(rock_div);
-console.log(paper_div);
-console.log(scissors_div);
-
 function getComputerChoice() {
     const choices = ['r', 'p', 's'];
     const randomNumber = Math.floor(Math.random() * 3);
