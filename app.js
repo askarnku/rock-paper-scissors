@@ -39,7 +39,7 @@ function win(user, computer) {
     const user_div = document.getElementById(user);
     result_div.innerHTML = `${convertToWord(user)}${smallUserWord} beats ${convertToWord(computer)}${smallCompWord}. You win!`;
     user_div.classList.add('green-glow');
-    setTimeout(function () { user_div.classList.remove('green-glow') }, 300);
+    setTimeout(function () { user_div.classList.remove('green-glow') }, 200);
 
 }
 
@@ -54,7 +54,7 @@ function lose(user, computer) {
     const user_div = document.getElementById(user);
     result_div.innerHTML = `${convertToWord(computer)}${smallCompWord} beats ${convertToWord(user)}${smallUserWord}. You lose!`;
     user_div.classList.add('red-glow');
-    setTimeout(function () { user_div.classList.remove('red-glow') }, 300);
+    setTimeout(function () { user_div.classList.remove('red-glow') }, 200);
 }
 
 function draw(user, computer) {
@@ -63,7 +63,7 @@ function draw(user, computer) {
     const user_div = document.getElementById(user);
     result_div.innerHTML = `${convertToWord(user)}${smallUserWord} and ${convertToWord(computer)}${smallCompWord}. Draw!`;
     user_div.classList.add('gray-glow');
-    setTimeout(function () { user_div.classList.remove('gray-glow') }, 300);
+    setTimeout(function () { user_div.classList.remove('gray-glow') }, 200);
 }
 
 function game(userChoice) {
